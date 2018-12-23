@@ -18,3 +18,9 @@ For more on `GQLify`, check out their [Why GQLify](https://www.gqlify.com/docs/w
 
 ### Firebase ###
 [Firebase](https://firebase.google.com/products/) is a Backend-as-a-Service (BaaS) service that provides a database service, hosting, authentication, storage, and other services for web and mobile applications.
+
+## Setup ##
+### Select a firebase project ###
+Open your [firebase console](https://console.firebase.google.com/) and select the project you're using, or click **Add Project** to create a new project.
+### Install firebase-tools ###
+Follow the [firebase setup guide](https://firebase.google.com/docs/cli/#setup) to install `firebase-tools`. 
