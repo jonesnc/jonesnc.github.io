@@ -240,4 +240,12 @@ i  functions: updating Node.js 8 function graphql(us-central1)...
 ✔  functions[graphql(us-central1)]: Successful update operation.
 
 ✔  Deploy complete!
+
+Project Console: https://console.firebase.google.com/project/gqlify/overview
 ```
+
+You should now be able to open your Project Console, go to the Functions page, and see your Function listed on the Dashboard page. It will list a "Trigger" URL, something that looks like `https://us-central1-gqlify.cloudfunctions.net/graphql`. The URL will be dynamically generated according to your Firebase Project name. 
+
+If you open this URL in your browser, the GraphQL Playground should launch.
+
+Success!
