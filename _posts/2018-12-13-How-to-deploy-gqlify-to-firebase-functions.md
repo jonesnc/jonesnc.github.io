@@ -29,12 +29,12 @@ Open your [firebase console](https://console.firebase.google.com/) and select th
 ### Install firebase-tools ###
 Follow the [firebase setup guide](https://firebase.google.com/docs/cli/#setup) to install `firebase-tools`. 
 ### Authenticate firebase-tools
-```
+```bash
 firebase login
 ```
 will log in via the browser and authenticate the firebase tool.
 ### Start your project
-```
+```bash
 mkdir myproject
 cd myproject
 firebase init functions
@@ -49,7 +49,7 @@ Next, I'll leave it up to you whether you want to run TSLint before the compilat
 Next, you'll be prompted to install dependencies. If you say `n` to this, you can run `yarn install` at any point to install dependencies.
 
 ### Install additional dependencies
-```
+```bash
 cd myproject/functions
 yarn install
 yarn add @gqlify/firestore @gqlify/server apollo-server apollo-server-cloud-functions graphql
@@ -60,13 +60,13 @@ yarn add -D @firebase/app-types @firebase/firestore-types @types/graphql
 ## Setup GQLify
 ### Create a GraphQL Schema
 Create a `demo.graphql` file that will contain our GQLify models in the `myproject/functions/src` directory.
-```
+```bash
 cd myproject/functions/src
 touch demo.graphql
 ```
 
 Paste the following code into `demo.graphql`.
-```
+```graphql
 type User @GQLifyModel(dataSource: "firestore", key: "users") {
   id: ID! @unique @autoGen # auto generate unique id
   username: String!
@@ -91,14 +91,14 @@ Once you've downloaded the JSON file, move it to the `myproject/functions/src` d
 ### Creating the server
 Here we'll create the TypeScript file that sets up the `GQLify` API in a way that is compatible with `Firebase Functions`.
 
-```
+```bash
 cd myproject/functions/src
 touch index.ts
 ```
 
 Paste the following code into `index.ts`:
 
-```
+```ts
 import * as functions from "firebase-functions";
 import { Gqlify } from "@gqlify/server";
 import { ApolloServer } from "apollo-server-cloud-functions";
@@ -137,19 +137,19 @@ exports.graphql = functions.https.onRequest((req, res) =>
 
 Be sure to replace `{{ jsonFileName }}` with the name of the serviceAccount JSON file you downloaded. For example, if the serviceAccount JSON is named `gqlify-firebase-adminsdk-a22pq-f37440b45b.json`, then your code should look like
 
-```
+```ts
 readFileSync(__dirname + "/gqlify-firebase-adminsdk-a22pq-f37440b45b.json", {
 ```
 
 Also, replace `{{ projectName }}` with the name of your Firebase project. For example, if the Firebase project you selected is named `gqlify`, then your code should look like
 
-```
+```ts
 const databaseUrl = "https://gqlify.firebaseio.com";
 ```
 
 Make sure your `myproject/functions/tsconfig.json` file looks lke this:
 
-```
+```json
 {
   "compilerOptions": {
     "lib": [
@@ -180,7 +180,7 @@ Copy the serviceAccount JSON file and `demo.graphql` file into the `myproject/fu
 
 ## Deploy to Firebase Functions
 We can now compile and deploy our Firebase Function
-```
+```bash
 cd myproject/functions
 firebase deploy --only functions
 ```
