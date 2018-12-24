@@ -20,6 +20,9 @@ For more on `GQLify`, check out their [Why GQLify](https://www.gqlify.com/docs/w
 [Firebase](https://firebase.google.com/products/) is a Backend-as-a-Service (BaaS) service that provides a database service, hosting, authentication, storage, and other services for web and mobile applications.
 
 ## Setup ##
+### Requirements
+* Node.js installed
+* [yarn package manager installed](https://yarnpkg.com/lang/en/docs/install/#mac-stable)
 ### Select a firebase project ###
 Open your [firebase console](https://console.firebase.google.com/) and select the project you're using, or click **Add Project** to create a new project.
 ### Install firebase-tools ###
@@ -70,4 +73,12 @@ myproject
       |
       +- node_modules/ # directory where your dependencies (declared in
                        # package.json) are installed
+```
+#### Install additional dependencies
+```
+cd myproject/functions
+yarn install
+yarn add @gqlify/firestore @gqlify/server apollo-server apollo-server-cloud-functions graphql
+yarn remove typescript && yarn add typescript
+yarn add -D @firebase/app-types @firebase/firestore-types @types/graphql
 ```
