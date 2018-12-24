@@ -109,7 +109,7 @@ const databaseUrl = "https://{{ projectName }}.firebaseio.com";
 // Read datamodel
 const sdl = readFileSync(__dirname + "/demo.graphql", { encoding: "utf8" });
 const cert = JSON.parse(
-  readFileSync(__dirname + "/{{ jsonFileName }}", {
+  readFileSync(__dirname + "/jsonFileName.json", {
     encoding: "utf8"
   })
 );
@@ -135,7 +135,7 @@ exports.graphql = functions.https.onRequest((req, res) =>
 );
 ```
 
-Be sure to replace `{{ jsonFileName }}` with the name of the serviceAccount JSON file you downloaded. For example, if the serviceAccount JSON is named `gqlify-firebase-adminsdk-a22pq-f37440b45b.json`, then your code should look like
+Be sure to replace `jsonFileName.json` with the name of the serviceAccount JSON file you downloaded. For example, if the serviceAccount JSON is named `gqlify-firebase-adminsdk-a22pq-f37440b45b.json`, then your code should look like
 
 ```ts
 readFileSync(__dirname + "/gqlify-firebase-adminsdk-a22pq-f37440b45b.json", {
