@@ -8,7 +8,7 @@ tags:
 toc: true
 ---
 
-This tutorial will walk you through the process of deploying `GQLify` to `Firebase Functions`. If you're already familiar with `GQLify` and `Firebase Functions`, skip to Step 1. While `GQLify` does support `Firebase Realtime Database`, this tutorial assumes you're using the `Cloud Firestore` database.
+This tutorial will walk you through the process of deploying `GQLify` to `Firebase Functions`. If you're already familiar with `GQLify` and `Firebase Functions`, skip to Setup. While `GQLify` does support `Firebase Realtime Database`, this tutorial assumes you're using the `Cloud Firestore` database.
 
 ## Introduction ##
 ### GQLify ###
