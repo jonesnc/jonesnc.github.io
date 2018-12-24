@@ -1,6 +1,7 @@
 ---
 title: "How to deploy GQLify to Firebase Functions"
 excerpt: "Tutorial that describes how to deploy GQLify to Firebase Functions."
+comments: true
 tags: 
   - gqlify
   - firebase
