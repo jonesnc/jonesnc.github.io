@@ -19,9 +19,9 @@ For more on `GQLify`, check out their [Why GQLify](https://www.gqlify.com/docs/w
 ### Firebase ###
 [Firebase](https://firebase.google.com/products/) is a Backend-as-a-Service (BaaS) service that provides a database service, hosting, authentication, storage, and other services for web and mobile applications.
 
-## Setup ##
+## Preliminary Setup ##
 ### Requirements
-* Node.js installed
+* [Node.js installed](https://nodejs.org/en/download/)
 * [yarn package manager installed](https://yarnpkg.com/lang/en/docs/install/#mac-stable)
 ### Select a firebase project ###
 Open your [firebase console](https://console.firebase.google.com/) and select the project you're using, or click **Add Project** to create a new project.
@@ -32,7 +32,7 @@ Follow the [firebase setup guide](https://firebase.google.com/docs/cli/#setup) t
 firebase login
 ```
 will log in via the browser and authenticate the firebase tool.
-### Create a project directory
+### Start your project
 ```
 mkdir myproject
 cd myproject
@@ -74,11 +74,35 @@ myproject
       +- node_modules/ # directory where your dependencies (declared in
                        # package.json) are installed
 ```
-#### Install additional dependencies
+### Install additional dependencies
 ```
 cd myproject/functions
 yarn install
 yarn add @gqlify/firestore @gqlify/server apollo-server apollo-server-cloud-functions graphql
 yarn remove typescript && yarn add typescript
 yarn add -D @firebase/app-types @firebase/firestore-types @types/graphql
+```
+
+## Setup GQLify
+### Create a GraphQL Schema
+Create a `demo.graphql` file that will contain our GQLify models.
+```
+cd myproject/functions/src
+touch demo.graphql
+```
+
+Paste the following code into `demo.graphql`.
+```
+type User @GQLifyModel(dataSource: "firestore", key: "users") {
+  id: ID! @unique @autoGen # auto generate unique id
+  username: String!
+  email: String
+  books: [Book!]!
+}
+
+type Book @GQLifyModel(dataSource: "firestore", key: "books") {
+  id: ID! @unique @autoGen # auto generate unique id
+  name: String!
+  author: [User!]!
+}
 ```
