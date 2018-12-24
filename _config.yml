@@ -261,15 +261,15 @@ tag_archive:
    enabled:
      - categories
      - tags
-     - year
+     #- year
    layouts:
      category: archive-taxonomy
      tag: archive-taxonomy
-     year: archive-taxonomy
+     #year: archive-taxonomy
    permalinks:
      category: /categories/:name/
      tag: /tags/:name/
-     year: /year-archive/
+     #year: /year-archive/
 
 
 # HTML Compression
