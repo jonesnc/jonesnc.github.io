@@ -39,42 +39,15 @@ mkdir myproject
 cd myproject
 firebase init functions
 ```
-> ? Select a default Firebase project for this directory:
 
 You will then be prompted to select the project that you'll be using with `firebase-tools`. Select the project you selected/created above.
 
-> ? What language would you like to use to write Cloud Functions?
-
 You will also be prompted to choose a language that you'll use to write your Cloud Functions. This tutorial assumes you selected TypeScript.
 
-> ? Do you want to use TSLint to catch probable bugs and enforce style? (Y/n)
+Next, I'll leave it up to you whether you want to run TSLint before the compilation is performed.
 
-I'll leave it up to you whether you want to run TSLint before the compilation is performed.
+Next, you'll be prompted to install dependencies. If you say `n` to this, you can run `yarn install` at any point to install dependencies.
 
-> ? Do you want to install dependencies with npm now? (Y/n)
-
-I suggest responding `Y` to this.
-
-Your project structure should now look this:
-
-```
-myproject
- +- .firebaserc    # Hidden file that helps you quickly switch between
- |                 # projects with `firebase use`
- |
- +- firebase.json  # Describes properties for your project
- |
- +- functions/     # Directory containing all your functions code
-      |
-      +- tslint.json   # Optional file containing rules for TSLint.
-      |
-      +- package.json  # npm package file describing your Cloud Functions code
-      |
-      +- index.ts      # main source file for your Cloud Functions code
-      |
-      +- node_modules/ # directory where your dependencies (declared in
-                       # package.json) are installed
-```
 ### Install additional dependencies
 ```
 cd myproject/functions
