@@ -172,3 +172,72 @@ Also, replace `{{ projectName }}` with the name of your Firebase project. For ex
 ```
 const databaseUrl = "https://gqlify.firebaseio.com";
 ```
+
+Make sure your `myproject/functions/tsconfig.json` file looks lke this:
+
+```
+{
+  "compilerOptions": {
+    "lib": [
+      "es6",
+      "dom",
+      "es2016",
+      "es2017",
+      "esnext.asynciterable"
+    ],
+    "module": "commonjs",
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitReturns": true,
+    "outDir": "lib",
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "target": "es6"
+  },
+  "compileOnSave": true,
+  "include": [
+    "src"
+  ],
+  "resolveJsonModule": true,
+}
+```
+
+Copy the serviceAccount JSON file and `demo.graphql` file into the `myproject/functions/lib` directory. `mkdir` this directory if it doesn't exist. 
+
+## Deploy to Firebase Functions
+We can now compile and deploy our Firebase Function
+```
+cd myproject/functions
+firebase deploy --only functions
+```
+
+The output of this command should look something like this:
+
+```
+=== Deploying to 'gqlify'...
+
+i  deploying functions
+Running command: npm --prefix "$RESOURCE_DIR" run lint
+
+> functions@ lint /Users/nathanjones/Projects/gqlify-demo/functions
+> tslint --project tsconfig.json
+
+Running command: npm --prefix "$RESOURCE_DIR" run build
+
+> functions@ build /Users/nathanjones/Projects/gqlify-demo/functions
+> tsc
+
+✔  functions: Finished running predeploy script.
+i  functions: ensuring necessary APIs are enabled...
+✔  functions: all necessary APIs are enabled
+i  functions: preparing functions directory for uploading...
+i  functions: packaged functions (121.26 KB) for uploading
+✔  functions: functions folder uploaded successfully
+i  functions: updating Node.js 8 function graphql(us-central1)...
+
+
+
+✔  functions[graphql(us-central1)]: Successful update operation.
+
+✔  Deploy complete!
+```
