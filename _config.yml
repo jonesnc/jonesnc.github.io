@@ -20,9 +20,9 @@ title                    : "Coding Fire"
 title_separator          : "-"
 name                     : "Nathan Jones"
 description              : "A collection of posts that strives to make tools easier and more intuitive through example"
-url                      : "https://jonesnc.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://codingfire.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "jonesnc/jonesnc.github.io"  # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "jonesnc/codingfire.github.io"  # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
