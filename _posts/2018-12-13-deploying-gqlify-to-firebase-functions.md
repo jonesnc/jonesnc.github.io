@@ -85,7 +85,7 @@ yarn add -D @firebase/app-types @firebase/firestore-types @types/graphql
 
 ## Setup GQLify
 ### Create a GraphQL Schema
-Create a `demo.graphql` file that will contain our GQLify models.
+Create a `demo.graphql` file that will contain our GQLify models in the `myproject/functions/src` directory.
 ```
 cd myproject/functions/src
 touch demo.graphql
@@ -105,4 +105,70 @@ type Book @GQLifyModel(dataSource: "firestore", key: "books") {
   name: String!
   author: [User!]!
 }
+```
+
+### Get the Firestore service account JSON file
+Download the `serviceAccount` JSON for the Firestore service account:
+
+![](https://www.gqlify.com/docs/assets/data-source/firebasesdk.gif)
+
+Once you've downloaded the JSON file, move it to the `myproject/functions/src` directory.
+
+### Creating the server
+Here we'll create the TypeScript file that sets up the `GQLify` API in a way that is compatible with `Firebase Functions`.
+
+```
+cd myproject/functions/src
+touch index.ts
+```
+
+Paste the following code into `index.ts`:
+
+```
+import * as functions from "firebase-functions";
+import { Gqlify } from "@gqlify/server";
+import { ApolloServer } from "apollo-server-cloud-functions";
+import { readFileSync } from "fs";
+import { FirestoreDataSource } from "@gqlify/firestore";
+const databaseUrl = "https://{{ projectName }}.firebaseio.com";
+
+// Read datamodel
+const sdl = readFileSync(__dirname + "/demo.graphql", { encoding: "utf8" });
+const cert = JSON.parse(
+  readFileSync(__dirname + "/{{ jsonFileName }}", {
+    encoding: "utf8"
+  })
+);
+
+// construct gqlify
+const gqlify = new Gqlify({
+  sdl,
+
+  dataSources: {
+    firestore: args => new FirestoreDataSource(cert, databaseUrl, args.key)
+  }
+});
+
+const server = new ApolloServer(
+  Object.assign({}, gqlify.createApolloConfig(), {
+    playground: true,
+    introspection: true
+  })
+);
+
+exports.graphql = functions.https.onRequest((req, res) =>
+  server.createHandler()(req, res)
+);
+```
+
+Be sure to replace `{{ jsonFileName }}` with the name of the serviceAccount JSON file you downloaded. For example, if the serviceAccount JSON is named `gqlify-firebase-adminsdk-a22pq-f37440b45b.json`, then your code should look like
+
+```
+readFileSync(__dirname + "/gqlify-firebase-adminsdk-a22pq-f37440b45b.json", {
+```
+
+Also, replace `{{ projectName }}` with the name of your Firebase project. For example, if the Firebase project you selected is named `gqlify`, then your code should look like
+
+```
+const databaseUrl = "https://gqlify.firebaseio.com";
 ```
