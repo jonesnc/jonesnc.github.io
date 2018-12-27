@@ -105,7 +105,7 @@ import { Gqlify } from "@gqlify/server";
 import { ApolloServer } from "apollo-server-cloud-functions";
 import { readFileSync } from "fs";
 import { FirestoreDataSource } from "@gqlify/firestore";
-const databaseUrl = "https://{{ projectName }}.firebaseio.com";
+const databaseUrl = "https://projectName.firebaseio.com";
 
 // Read datamodel
 const sdl = readFileSync(__dirname + "/demo.graphql", { encoding: "utf8" });
@@ -142,7 +142,7 @@ Be sure to replace `jsonFileName.json` with the name of the serviceAccount JSON 
 readFileSync(__dirname + "/gqlify-firebase-adminsdk-a22pq-f37440b45b.json", {
 ```
 
-Also, replace `{{ projectName }}` with the name of your Firebase project. For example, if the Firebase project you selected is named `gqlify`, then your code should look like
+Also, replace `projectName` with the name of your Firebase project. For example, if the Firebase project you selected is named `gqlify`, then your code should look like
 
 ```ts
 const databaseUrl = "https://gqlify.firebaseio.com";
