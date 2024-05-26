@@ -2,19 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/blog/</loc>
+    <loc>https://jonesnc.github.io/jonesnc/blog/</loc>
     <lastmod>2024-05-26T14:22:18-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/calling-queryset.bulk_update-with-chars-and-clobs/</loc>
+    <loc>https://jonesnc.github.io/jonesnc/calling-queryset.bulk_update-with-chars-and-clobs/</loc>
     <lastmod>2024-05-26T14:22:18-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/django/</loc>
+    <loc>https://jonesnc.github.io/jonesnc/blog/django/</loc>
     <lastmod>2024-05-26T14:22:18-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://jonesnc.github.io/jonesnc/</loc>
     <lastmod>2024-05-26T14:22:18-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/oracle/</loc>
+    <loc>https://jonesnc.github.io/jonesnc/blog/oracle/</loc>
     <lastmod>2024-05-26T14:22:18-06:00</lastmod>
   </url>
 </urlset>
