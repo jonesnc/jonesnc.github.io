@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Oracle on Nathan&#39;s blog</title>
+    <link>http://localhost:1313/blog/oracle/</link>
+    <description>Recent content in Oracle on Nathan&#39;s blog</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2024, jonesnc.</copyright>
+    <lastBuildDate>Sun, 26 May 2024 14:22:18 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/oracle/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Calling QuerySet.bulk_update With Chars and CLOBs</title>
+      <link>http://localhost:1313/calling-queryset.bulk_update-with-chars-and-clobs/</link>
+      <pubDate>Sun, 26 May 2024 14:22:18 -0600</pubDate>
+      <guid>http://localhost:1313/calling-queryset.bulk_update-with-chars-and-clobs/</guid>
+      <description>This is a page about »Django Bulk Update With Chars and CLOBs«.</description>
+    </item>
+  </channel>
+</rss>
