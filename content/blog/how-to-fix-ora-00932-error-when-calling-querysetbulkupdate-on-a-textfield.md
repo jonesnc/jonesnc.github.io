@@ -41,8 +41,8 @@ b = Throwaway.objects.create(text="b")
 Now we'll call `bulk_update` with values that will cause the ORA-00932 error to occur. First, we need to make changes to the `my_field` field:
 
 ```python
-a.my_field = "a" * 10    # must be less than 4,000
-b.my_field = "b" * 4005  # must be greater than 4,000
+a.my_field = "a" * 10    # must be less than 4,000 chars long
+b.my_field = "b" * 4005  # must be greater than 4,000 chars long
 ```
 
 Then we'll call `bulk_update` to save these changes. Remember that the first `bulk_update` argument is a collection of Django model instances (it can be a `QuerySet`, a `list` or a `tuple`). The second argument is a list of field names that will be updated.
