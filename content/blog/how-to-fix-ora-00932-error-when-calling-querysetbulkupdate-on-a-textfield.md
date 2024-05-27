@@ -63,10 +63,10 @@ To fix this, we need to update the `Throwaway` objects where `my_field` is great
 
 ```python
 objs = [a, b]
-char_updates = []
 clob_updates = []
+char_updates = []
 
-for obj in obj:
+for obj in objs:
     if len(obj.my_field) > 4000:
         clob_updates.append(obj)
     else:
