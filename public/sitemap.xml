@@ -5,13 +5,13 @@
     <loc>https://jonesnc.github.io/jonesnc/blog/</loc>
     <lastmod>2024-05-26T14:22:18-06:00</lastmod>
   </url><url>
-    <loc>https://jonesnc.github.io/jonesnc/calling-queryset.bulk_update-with-chars-and-clobs/</loc>
-    <lastmod>2024-05-26T14:22:18-06:00</lastmod>
-  </url><url>
     <loc>https://jonesnc.github.io/jonesnc/blog/django/</loc>
     <lastmod>2024-05-26T14:22:18-06:00</lastmod>
   </url><url>
     <loc>https://jonesnc.github.io/jonesnc/</loc>
+    <lastmod>2024-05-26T14:22:18-06:00</lastmod>
+  </url><url>
+    <loc>https://jonesnc.github.io/jonesnc/how-to-fix-ora-00932-error-when-calling-queryset.bulk_update-on-a-textfield/</loc>
     <lastmod>2024-05-26T14:22:18-06:00</lastmod>
   </url><url>
     <loc>https://jonesnc.github.io/jonesnc/blog/oracle/</loc>
