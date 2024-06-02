@@ -7,7 +7,7 @@ title = "Home"
 
 # Hi, I'm Nathan Jones
 
-I'm a web programmer, and I currently work at Southern Utah University. I work on web apps written in Python using the Django framework using Oracle database.
+I'm a web programmer, and I currently work at Southern Utah University. I work on web apps written in Python using the Django framework and Oracle database.
 
 This blog is a collection of programming techniques and lessons I've learned.
 
