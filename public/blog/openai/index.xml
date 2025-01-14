@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OpenAI on Nathan Jones&#39; blog</title>
+    <link>http://localhost:1313/jonesnc/blog/openai/</link>
+    <description>Recent content in OpenAI on Nathan Jones&#39; blog</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2024, jonesnc.</copyright>
+    <lastBuildDate>Mon, 13 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/jonesnc/blog/openai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to specify a Structured Output Response Format in OpenAI&#39;s Batch API</title>
+      <link>http://localhost:1313/jonesnc/how-to-specify-a-structured-output-response-format-in-openais-batch-api/</link>
+      <pubDate>Mon, 13 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/jonesnc/how-to-specify-a-structured-output-response-format-in-openais-batch-api/</guid>
+      <description>&lt;h2 id=&#34;problem&#34;&gt;Problem&lt;/h2&gt;&#xA;&lt;p&gt;I recently started using OpenAI&amp;rsquo;s &lt;a href=&#34;https://platform.openai.com/docs/guides/batch&#34;&gt;Batch API&lt;/a&gt; to send multiple jobs to OpenAI, and for the most part it&amp;rsquo;s been a pretty smooth experience. However, it was difficult to figure out how to get the batch results to adhere to a consistent data structure. While OpenAI has provided a way to &lt;a href=&#34;https://platform.openai.com/docs/guides/structured-outputs&#34;&gt;ensure a response adheres to a JSON Schema for a single job response&lt;/a&gt;, the documentation for the Batch API doesn&amp;rsquo;t explain how to get Structured Output from a batch job&amp;rsquo;s series of responses.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

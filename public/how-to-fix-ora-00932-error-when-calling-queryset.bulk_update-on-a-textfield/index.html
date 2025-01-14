@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-<head>
+<head><script src="/jonesnc/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=jonesnc/livereload" data-no-instant defer></script>
   <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="shortcut icon" href="https://jonesnc.github.io/jonesnc/images/favicon.png" />
+<link rel="shortcut icon" href="http://localhost:1313/jonesnc/images/favicon.png" />
 <title>How to fix ORA-00932 error when calling QuerySet.bulk_update on a TextField | Nathan Jones&#39; blog</title>
 <meta name="title" content="How to fix ORA-00932 error when calling QuerySet.bulk_update on a TextField" />
-<meta name="description" content="Intro Django&rsquo;s bulk_update QuerySet method allows you to update multiple objects in a single SQL UPDATE statement. I recently ran into an issue calling bulk_update against an Oracle database, and in this post, I will share the solution I used to fix it.
+<meta name="description" content="Intro
+Django&rsquo;s bulk_update QuerySet method allows you to update multiple objects in a single SQL UPDATE statement. I recently ran into an issue calling bulk_update against an Oracle database, and in this post, I will share the solution I used to fix it.
 The Oracle error that we&rsquo;ll be fixing is this:
-ORA-00932: inconsistent datatypes: expected CHAR got CLOB Background First, let&rsquo;s start with an example Django model Throwaway with a single TextField named my_field:" />
+ORA-00932: inconsistent datatypes: expected CHAR got CLOB
+Background
+First, let&rsquo;s start with an example Django model Throwaway with a single TextField named my_field:" />
 <meta name="keywords" content="Django,Oracle," />
 
 
-<meta property="og:url" content="https://jonesnc.github.io/jonesnc/how-to-fix-ora-00932-error-when-calling-queryset.bulk_update-on-a-textfield/">
+<meta property="og:url" content="http://localhost:1313/jonesnc/how-to-fix-ora-00932-error-when-calling-queryset.bulk_update-on-a-textfield/">
   <meta property="og:site_name" content="Nathan Jones&#39; blog">
   <meta property="og:title" content="How to fix ORA-00932 error when calling QuerySet.bulk_update on a TextField">
   <meta property="og:description" content="Intro Djangoâ€™s bulk_update QuerySet method allows you to update multiple objects in a single SQL UPDATE statement. I recently ran into an issue calling bulk_update against an Oracle database, and in this post, I will share the solution I used to fix it.
@@ -27,13 +30,13 @@ ORA-00932: inconsistent datatypes: expected CHAR got CLOB Background First, letâ
     <meta property="article:modified_time" content="2024-05-26T14:22:18-06:00">
     <meta property="article:tag" content="Django">
     <meta property="article:tag" content="Oracle">
-    <meta property="og:image" content="https://jonesnc.github.io/jonesnc/images/share.png">
+    <meta property="og:image" content="http://localhost:1313/jonesnc/images/share.png">
 
 
 
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://jonesnc.github.io/jonesnc/images/share.png">
+  <meta name="twitter:image" content="http://localhost:1313/jonesnc/images/share.png">
   <meta name="twitter:title" content="How to fix ORA-00932 error when calling QuerySet.bulk_update on a TextField">
   <meta name="twitter:description" content="Intro Djangoâ€™s bulk_update QuerySet method allows you to update multiple objects in a single SQL UPDATE statement. I recently ran into an issue calling bulk_update against an Oracle database, and in this post, I will share the solution I used to fix it.
 The Oracle error that weâ€™ll be fixing is this:
@@ -49,7 +52,7 @@ ORA-00932: inconsistent datatypes: expected CHAR got CLOB Background First, letâ
   <meta itemprop="datePublished" content="2024-05-26T14:22:18-06:00">
   <meta itemprop="dateModified" content="2024-05-26T14:22:18-06:00">
   <meta itemprop="wordCount" content="408">
-  <meta itemprop="image" content="https://jonesnc.github.io/jonesnc/images/share.png">
+  <meta itemprop="image" content="http://localhost:1313/jonesnc/images/share.png">
   <meta itemprop="keywords" content="Django,Oracle">
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
@@ -292,9 +295,9 @@ ORA-00932: inconsistent datatypes: expected CHAR got CLOB Background First, letâ
 </content>
 <p>
   
-  <a href="https://jonesnc.github.io/jonesnc/blog/django/">#Django</a>
+  <a href="http://localhost:1313/jonesnc/blog/django/">#Django</a>
   
-  <a href="https://jonesnc.github.io/jonesnc/blog/oracle/">#Oracle</a>
+  <a href="http://localhost:1313/jonesnc/blog/oracle/">#Oracle</a>
   
 </p>
 

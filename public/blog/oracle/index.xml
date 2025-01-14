@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Oracle on Nathan Jones&#39; blog</title>
-    <link>https://jonesnc.github.io/jonesnc/blog/oracle/</link>
+    <link>http://localhost:1313/jonesnc/blog/oracle/</link>
     <description>Recent content in Oracle on Nathan Jones&#39; blog</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2024, jonesnc.</copyright>
     <lastBuildDate>Sun, 26 May 2024 14:22:18 -0600</lastBuildDate>
-    <atom:link href="https://jonesnc.github.io/jonesnc/blog/oracle/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/jonesnc/blog/oracle/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to fix ORA-00932 error when calling QuerySet.bulk_update on a TextField</title>
-      <link>https://jonesnc.github.io/jonesnc/how-to-fix-ora-00932-error-when-calling-queryset.bulk_update-on-a-textfield/</link>
+      <link>http://localhost:1313/jonesnc/how-to-fix-ora-00932-error-when-calling-queryset.bulk_update-on-a-textfield/</link>
       <pubDate>Sun, 26 May 2024 14:22:18 -0600</pubDate>
-      <guid>https://jonesnc.github.io/jonesnc/how-to-fix-ora-00932-error-when-calling-queryset.bulk_update-on-a-textfield/</guid>
-      <description>Intro Django&amp;rsquo;s bulk_update QuerySet method allows you to update multiple objects in a single SQL UPDATE statement. I recently ran into an issue calling bulk_update against an Oracle database, and in this post, I will share the solution I used to fix it.&#xA;The Oracle error that we&amp;rsquo;ll be fixing is this:&#xA;ORA-00932: inconsistent datatypes: expected CHAR got CLOB Background First, let&amp;rsquo;s start with an example Django model Throwaway with a single TextField named my_field:</description>
+      <guid>http://localhost:1313/jonesnc/how-to-fix-ora-00932-error-when-calling-queryset.bulk_update-on-a-textfield/</guid>
+      <description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;&#xA;&lt;p&gt;Django&amp;rsquo;s &lt;a href=&#34;https://docs.djangoproject.com/en/4.2/ref/models/querysets/#bulk-update&#34;&gt;&lt;code&gt;bulk_update&lt;/code&gt;&lt;/a&gt; QuerySet method allows you to update multiple objects in a single SQL &lt;code&gt;UPDATE&lt;/code&gt; statement. I recently ran into an issue calling &lt;code&gt;bulk_update&lt;/code&gt; against an Oracle database, and in this post, I will share the solution I used to fix it.&lt;/p&gt;&#xA;&lt;p&gt;The Oracle error that we&amp;rsquo;ll be fixing is this:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ORA&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;00932&lt;/span&gt;: inconsistent datatypes: expected CHAR got &lt;span style=&#34;color:#66d9ef&#34;&gt;CLOB&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;&#xA;&lt;p&gt;First, let&amp;rsquo;s start with an example Django model &lt;code&gt;Throwaway&lt;/code&gt; with a single &lt;code&gt;TextField&lt;/code&gt; named &lt;code&gt;my_field&lt;/code&gt;:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
