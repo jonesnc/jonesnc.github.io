@@ -2,28 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://jonesnc.github.io/jonesnc/blog/</loc>
+    <loc>http://localhost:1313/jonesnc/blog/</loc>
+    <lastmod>2025-03-11T10:11:23-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/jonesnc/blog/gemini/</loc>
+    <lastmod>2025-03-11T10:11:23-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/jonesnc/blog/google/</loc>
+    <lastmod>2025-03-11T10:11:23-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/jonesnc/</loc>
+    <lastmod>2025-03-11T10:11:23-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/jonesnc/how-to-specify-a-structured-output-response-format-in-geminis-batch-predictions-api/</loc>
+    <lastmod>2025-03-11T10:11:23-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/jonesnc/blog/json-schema/</loc>
+    <lastmod>2025-03-11T10:11:23-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/jonesnc/blog/pydantic/</loc>
+    <lastmod>2025-03-11T10:11:23-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/jonesnc/how-to-specify-a-structured-output-response-format-in-openais-batch-api/</loc>
     <lastmod>2025-01-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jonesnc.github.io/jonesnc/</loc>
+    <loc>http://localhost:1313/jonesnc/blog/openai/</loc>
     <lastmod>2025-01-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jonesnc.github.io/jonesnc/how-to-specify-a-structured-output-response-format-in-openais-batch-api/</loc>
-    <lastmod>2025-01-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://jonesnc.github.io/jonesnc/blog/json-schema/</loc>
-    <lastmod>2025-01-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://jonesnc.github.io/jonesnc/blog/openai/</loc>
-    <lastmod>2025-01-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://jonesnc.github.io/jonesnc/blog/django/</loc>
+    <loc>http://localhost:1313/jonesnc/blog/django/</loc>
     <lastmod>2024-05-26T14:22:18-06:00</lastmod>
   </url><url>
-    <loc>https://jonesnc.github.io/jonesnc/how-to-fix-ora-00932-error-when-calling-queryset.bulk_update-on-a-textfield/</loc>
+    <loc>http://localhost:1313/jonesnc/how-to-fix-ora-00932-error-when-calling-queryset.bulk_update-on-a-textfield/</loc>
     <lastmod>2024-05-26T14:22:18-06:00</lastmod>
   </url><url>
-    <loc>https://jonesnc.github.io/jonesnc/blog/oracle/</loc>
+    <loc>http://localhost:1313/jonesnc/blog/oracle/</loc>
     <lastmod>2024-05-26T14:22:18-06:00</lastmod>
   </url>
 </urlset>
