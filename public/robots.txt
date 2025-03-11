@@ -1,2 +1,2 @@
 User-Agent: *
-Sitemap: http://localhost:1313/jonesnc/sitemap.xml
+Sitemap: https://jonesnc.github.io/jonesnc/sitemap.xml
