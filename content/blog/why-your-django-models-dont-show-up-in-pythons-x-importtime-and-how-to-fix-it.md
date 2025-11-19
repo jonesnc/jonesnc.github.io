@@ -304,8 +304,4 @@ Both approaches have **zero overhead** in normal operation since they only activ
 
 Django's use of `import_module()` for dynamic imports makes perfect sense for its architecture, but it creates a blind spot when profiling with `-X importtime`. By detecting when profiling is active and switching to `exec()`, we get the best of both worlds: clean dynamic imports in production and full visibility during profiling.
 
-The investigation journey - from noticing the missing imports, to testing different import methods, to discovering the `sys._xoptions` detection mechanism - shows how understanding Python's import system deeply can help solve real-world debugging challenges.
-
-Now go forth and profile those Django imports! 🚀
-
 Happy profiling!
