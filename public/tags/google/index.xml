@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Google on Nathan Jones&#39; blog</title>
+    <link>https://jonesnc.github.io/jonesnc/tags/google/</link>
+    <description>Recent content in Google on Nathan Jones&#39; blog</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2025, jonesnc.</copyright>
+    <lastBuildDate>Tue, 11 Mar 2025 10:11:23 -0600</lastBuildDate>
+    <atom:link href="https://jonesnc.github.io/jonesnc/tags/google/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Specify a Structured Output Response Format in Geminis Batch Predictions API</title>
+      <link>https://jonesnc.github.io/jonesnc/how-to-specify-a-structured-output-response-format-in-geminis-batch-predictions-api/</link>
+      <pubDate>Tue, 11 Mar 2025 10:11:23 -0600</pubDate>
+      <guid>https://jonesnc.github.io/jonesnc/how-to-specify-a-structured-output-response-format-in-geminis-batch-predictions-api/</guid>
+      <description>&lt;p&gt;In my &lt;a href=&#34;https://jonesnc.github.io/jonesnc/how-to-specify-a-structured-output-response-format-in-openais-batch-api/&#34;&gt;previous post&lt;/a&gt;, I described how to use Structured Output with OpenAI&amp;rsquo;s Batch API.&lt;/p&gt;&#xA;&lt;p&gt;In this post, my goal is to document the same thing for Google&amp;rsquo;s Gemini models. The goal is to instruct Google&amp;rsquo;s Batch Predictions APIs to structure its text responses as valid JSON data that adheres to a given JSON Schema or Pdyantic model. I couldn&amp;rsquo;t find this particular configuration anywhere in Google documentation, so I wanted to share it. I recommend reading my &lt;a href=&#34;https://jonesnc.github.io/jonesnc/how-to-specify-a-structured-output-response-format-in-openais-batch-api/&#34;&gt;previous post&lt;/a&gt; first if you haven&amp;rsquo;t already, as that covers a lot of the basic concepts related to these APIs.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

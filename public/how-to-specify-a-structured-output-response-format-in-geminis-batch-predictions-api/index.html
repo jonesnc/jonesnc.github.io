@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-<head><script src="/jonesnc/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=jonesnc/livereload" data-no-instant defer></script>
+<head>
   <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="shortcut icon" href="http://localhost:1313/jonesnc/images/favicon.png" />
+<link rel="shortcut icon" href="https://jonesnc.github.io/jonesnc/images/favicon.png" />
 <title>How to Specify a Structured Output Response Format in Geminis Batch Predictions API | Nathan Jones&#39; blog</title>
 <meta name="title" content="How to Specify a Structured Output Response Format in Geminis Batch Predictions API" />
 <meta name="description" content="In my previous post, I described how to use Structured Output with OpenAI&rsquo;s Batch API.
@@ -13,7 +13,7 @@ In this post, my goal is to document the same thing for Google&rsquo;s Gemini mo
 <meta name="keywords" content="pydantic,json schema,gemini,google," />
 
 
-<meta property="og:url" content="http://localhost:1313/jonesnc/how-to-specify-a-structured-output-response-format-in-geminis-batch-predictions-api/">
+<meta property="og:url" content="https://jonesnc.github.io/jonesnc/how-to-specify-a-structured-output-response-format-in-geminis-batch-predictions-api/">
   <meta property="og:site_name" content="Nathan Jones&#39; blog">
   <meta property="og:title" content="How to Specify a Structured Output Response Format in Geminis Batch Predictions API">
   <meta property="og:description" content="In my previous post, I described how to use Structured Output with OpenAI’s Batch API.
@@ -27,13 +27,13 @@ In this post, my goal is to document the same thing for Google’s Gemini models
     <meta property="article:tag" content="Json Schema">
     <meta property="article:tag" content="Gemini">
     <meta property="article:tag" content="Google">
-    <meta property="og:image" content="http://localhost:1313/jonesnc/images/share.png">
+    <meta property="og:image" content="https://jonesnc.github.io/jonesnc/images/share.png">
 
 
 
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/jonesnc/images/share.png">
+  <meta name="twitter:image" content="https://jonesnc.github.io/jonesnc/images/share.png">
   <meta name="twitter:title" content="How to Specify a Structured Output Response Format in Geminis Batch Predictions API">
   <meta name="twitter:description" content="In my previous post, I described how to use Structured Output with OpenAI’s Batch API.
 In this post, my goal is to document the same thing for Google’s Gemini models. The goal is to instruct Google’s Batch Predictions APIs to structure its text responses as valid JSON data that adheres to a given JSON Schema or Pdyantic model. I couldn’t find this particular configuration anywhere in Google documentation, so I wanted to share it. I recommend reading my previous post first if you haven’t already, as that covers a lot of the basic concepts related to these APIs.">
@@ -47,157 +47,162 @@ In this post, my goal is to document the same thing for Google’s Gemini models
   <meta itemprop="datePublished" content="2025-03-11T10:11:23-06:00">
   <meta itemprop="dateModified" content="2025-03-11T10:11:23-06:00">
   <meta itemprop="wordCount" content="246">
-  <meta itemprop="image" content="http://localhost:1313/jonesnc/images/share.png">
+  <meta itemprop="image" content="https://jonesnc.github.io/jonesnc/images/share.png">
   <meta itemprop="keywords" content="Pydantic,Json Schema,Gemini,Google">
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
   <style>
   :root {
-      --width: 800px;
-      --font-main: Verdana, sans-serif;
-      --font-secondary: Verdana, sans-serif;
-      --font-scale: 1em;
-      --background-color: #fff;
-      --heading-color: #222;
-      --text-color: #444;
-      --link-color: #3273dc;
-      --visited-color:  #8b6fcb;
-      --code-background-color: #f2f2f2;
-      --code-color: #222;
-      --blockquote-color: #222;
+    --width: 720px;
+    --font-main: Verdana, sans-serif;
+    --font-secondary: Verdana, sans-serif;
+    --font-scale: 1em;
+    --background-color: #fff;
+    --heading-color: #222;
+    --text-color: #444;
+    --link-color: #3273dc;
+    --visited-color: #8b6fcb;
+    --blockquote-color: #222;
   }
 
   @media (prefers-color-scheme: dark) {
-      :root {
-          --background-color: #333;
-          --heading-color: #eee;
-          --text-color: #ddd;
-          --link-color: #8cc2dd;
-          --visited-color:  #8b6fcb;
-          --code-background-color: #777;
-          --code-color: #ddd;
-          --blockquote-color: #ccc;
-      }
+    :root {
+      --background-color: #01242e;
+      --heading-color: #eee;
+      --text-color: #ddd;
+      --link-color: #8cc2dd;
+      --visited-color: #8b6fcb;
+      --blockquote-color: #ccc;
+    }
   }
 
   body {
-      font-family: var(--font-secondary);
-      font-size: var(--font-scale);
-      margin: auto;
-      padding: 20px;
-      max-width: var(--width);
-      text-align: left;
-      background-color: var(--background-color);
-      word-wrap: break-word;
-      overflow-wrap: break-word;
-      line-height: 1.5;
-      color: var(--text-color);
+    font-family: var(--font-secondary);
+    font-size: var(--font-scale);
+    margin: auto;
+    padding: 20px;
+    max-width: var(--width);
+    text-align: left;
+    background-color: var(--background-color);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: var(--text-color);
   }
 
-  h1, h2, h3, h4, h5, h6 {
-      font-family: var(--font-main);
-      color: var(--heading-color);
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-main);
+    color: var(--heading-color);
   }
 
   a {
-      color: var(--link-color);
-      cursor: pointer;
-      text-decoration: none;
+    color: var(--link-color);
+    cursor: pointer;
+    text-decoration: none;
   }
 
   a:hover {
-      text-decoration: underline; 
+    text-decoration: underline;
   }
 
   nav a {
-      margin-right: 8px;
+    margin-right: 8px;
   }
 
-  strong, b {
-      color: var(--heading-color);
+  strong,
+  b {
+    color: var(--heading-color);
   }
 
   button {
-      margin: 0;
-      cursor: pointer;
+    margin: 0;
+    cursor: pointer;
+  }
+
+  time {
+    font-family: monospace;
+    font-style: normal;
+    font-size: 15px;
   }
 
   main {
-      line-height: 1.6;
+    line-height: 1.6;
   }
 
   table {
-      width: 100%;
+    width: 100%;
   }
 
   hr {
-      border: 0;
-      border-top: 1px dashed;
+    border: 0;
+    border-top: 1px dashed;
   }
 
   img {
-      max-width: 100%;
+    max-width: 100%;
   }
 
   code {
-      font-family: monospace;
-      padding: 2px;
-      background-color: var(--code-background-color);
-      color: var(--code-color);
-      border-radius: 3px;
+    font-family: monospace;
+    padding: 2px;
+    border-radius: 3px;
   }
 
   blockquote {
-      border-left: 1px solid #999;
-      color: var(--code-color);
-      padding-left: 20px;
-      font-style: italic;
+    border-left: 1px solid #999;
+    color: var(--blockquote-color);
+    padding-left: 20px;
+    font-style: italic;
   }
 
   footer {
-      padding: 25px 0;
-      text-align: center;
+    padding: 25px 0;
+    text-align: center;
   }
 
   .title:hover {
-      text-decoration: none;
+    text-decoration: none;
   }
 
   .title h1 {
-      font-size: 1.5em;
+    font-size: 1.5em;
   }
 
   .inline {
-      width: auto !important;
+    width: auto !important;
   }
 
-  .highlight, .code {
-      padding: 1px 15px;
-      background-color: var(--code-background-color);
-      color: var(--code-color);
-      border-radius: 3px;
-      margin-block-start: 1em;
-      margin-block-end: 1em;
-      overflow-x: auto;
+  .highlight,
+  .code {
+    border-radius: 3px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    overflow-x: auto;
   }
 
    
   ul.blog-posts {
-      list-style-type: none;
-      padding: unset;
+    list-style-type: none;
+    padding: unset;
   }
 
   ul.blog-posts li {
-      display: flex;
+    display: flex;
   }
 
   ul.blog-posts li span {
-      flex: 0 0 130px;
+    flex: 0 0 130px;
   }
 
   ul.blog-posts li a:visited {
-      color: var(--visited-color);
+    color: var(--visited-color);
   }
+
 </style>
 
 </head>
@@ -206,10 +211,10 @@ In this post, my goal is to document the same thing for Google’s Gemini models
   <header><a href="/jonesnc/" class="title">
   <h2>Nathan Jones&#39; blog</h2>
 </a>
-<nav><a href="/jonesnc/">Home</a>
+<nav>
+<a href="/jonesnc/">Home</a>
 
-
-<a href="/jonesnc/blog">Blog</a>
+<a href="/jonesnc/blog/">Blog</a>
 
 </nav>
 </header>
@@ -275,15 +280,18 @@ In this post, my goal is to document the same thing for Google’s Gemini models
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div>
 </content>
+
+
+
 <p>
   
-  <a href="http://localhost:1313/jonesnc/blog/pydantic/">#Pydantic</a>
+  <a href="https://jonesnc.github.io/jonesnc/tags/pydantic/">#Pydantic</a>
   
-  <a href="http://localhost:1313/jonesnc/blog/json-schema/">#Json Schema</a>
+  <a href="https://jonesnc.github.io/jonesnc/tags/json-schema/">#Json Schema</a>
   
-  <a href="http://localhost:1313/jonesnc/blog/gemini/">#Gemini</a>
+  <a href="https://jonesnc.github.io/jonesnc/tags/gemini/">#Gemini</a>
   
-  <a href="http://localhost:1313/jonesnc/blog/google/">#Google</a>
+  <a href="https://jonesnc.github.io/jonesnc/tags/google/">#Google</a>
   
 </p>
 
@@ -291,7 +299,7 @@ In this post, my goal is to document the same thing for Google’s Gemini models
   <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
 </footer>
 
-    
+  
 </body>
 
 </html>

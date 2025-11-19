@@ -2,40 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/jonesnc/blog/</loc>
+    <loc>https://jonesnc.github.io/jonesnc/blog/</loc>
+    <lastmod>2025-11-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jonesnc.github.io/jonesnc/tags/django/</loc>
+    <lastmod>2025-11-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jonesnc.github.io/jonesnc/</loc>
+    <lastmod>2025-11-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jonesnc.github.io/jonesnc/tags/importtime/</loc>
+    <lastmod>2025-11-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jonesnc.github.io/jonesnc/tags/profiling/</loc>
+    <lastmod>2025-11-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jonesnc.github.io/jonesnc/tags/python/</loc>
+    <lastmod>2025-11-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jonesnc.github.io/jonesnc/why-your-django-models-dont-show-up-in-pythons-x-importtime-and-how-to-fix-it/</loc>
+    <lastmod>2025-11-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jonesnc.github.io/jonesnc/tags/gemini/</loc>
     <lastmod>2025-03-11T10:11:23-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/jonesnc/blog/gemini/</loc>
+    <loc>https://jonesnc.github.io/jonesnc/tags/google/</loc>
     <lastmod>2025-03-11T10:11:23-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/jonesnc/blog/google/</loc>
+    <loc>https://jonesnc.github.io/jonesnc/how-to-specify-a-structured-output-response-format-in-geminis-batch-predictions-api/</loc>
     <lastmod>2025-03-11T10:11:23-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/jonesnc/</loc>
+    <loc>https://jonesnc.github.io/jonesnc/tags/json-schema/</loc>
     <lastmod>2025-03-11T10:11:23-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/jonesnc/how-to-specify-a-structured-output-response-format-in-geminis-batch-predictions-api/</loc>
+    <loc>https://jonesnc.github.io/jonesnc/tags/pydantic/</loc>
     <lastmod>2025-03-11T10:11:23-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/jonesnc/blog/json-schema/</loc>
-    <lastmod>2025-03-11T10:11:23-06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/jonesnc/blog/pydantic/</loc>
-    <lastmod>2025-03-11T10:11:23-06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/jonesnc/how-to-specify-a-structured-output-response-format-in-openais-batch-api/</loc>
+    <loc>https://jonesnc.github.io/jonesnc/how-to-specify-a-structured-output-response-format-in-openais-batch-api/</loc>
     <lastmod>2025-01-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/jonesnc/blog/openai/</loc>
+    <loc>https://jonesnc.github.io/jonesnc/tags/openai/</loc>
     <lastmod>2025-01-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/jonesnc/blog/django/</loc>
+    <loc>https://jonesnc.github.io/jonesnc/how-to-fix-ora-00932-error-when-calling-queryset.bulk_update-on-a-textfield/</loc>
     <lastmod>2024-05-26T14:22:18-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/jonesnc/how-to-fix-ora-00932-error-when-calling-queryset.bulk_update-on-a-textfield/</loc>
-    <lastmod>2024-05-26T14:22:18-06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/jonesnc/blog/oracle/</loc>
+    <loc>https://jonesnc.github.io/jonesnc/tags/oracle/</loc>
     <lastmod>2024-05-26T14:22:18-06:00</lastmod>
   </url>
 </urlset>

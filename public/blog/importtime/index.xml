@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Importtime on </title>
+    <link>//localhost:1313/blog/importtime/</link>
+    <description>Recent content in Importtime on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 18 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/blog/importtime/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why Your Django Models Don&#39;t Show Up in Python&#39;s -X importtime (And How to Fix It)</title>
+      <link>//localhost:1313/why-your-django-models-dont-show-up-in-pythons-x-importtime-and-how-to-fix-it/</link>
+      <pubDate>Tue, 18 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/why-your-django-models-dont-show-up-in-pythons-x-importtime-and-how-to-fix-it/</guid>
+      <description>&lt;h2 id=&#34;the-mystery&#34;&gt;The Mystery&lt;/h2&gt;&#xA;&lt;p&gt;I was profiling my Django application&amp;rsquo;s startup time using Python&amp;rsquo;s &lt;code&gt;-X importtime&lt;/code&gt; flag, which shows how long each module takes to import:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;python -X importtime manage.py check 2&amp;gt;&amp;amp;&lt;span style=&#34;color:#d3869b&#34;&gt;1&lt;/span&gt; &amp;gt; import.log&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Looking at the output, I saw Django&amp;rsquo;s built-in models:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import time:       941 |        941 | django.contrib.contenttypes.models&#xA;import time:      1466 |     496404 | django.contrib.auth.base_user&#xA;import time:       743 |        743 | django.contrib.sessions.base_session&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;But my own app&amp;rsquo;s models were mysteriously absent! I could see other modules from my app:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
