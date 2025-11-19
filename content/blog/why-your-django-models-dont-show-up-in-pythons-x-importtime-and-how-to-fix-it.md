@@ -156,7 +156,7 @@ def patch_all_appconfigs():
 
 ```
 
-**Usage:** Just add one line to your `manage.py`:
+**Usage:** Just add two lines to your `manage.py`:
 
 ```python
 #!/usr/bin/env python
