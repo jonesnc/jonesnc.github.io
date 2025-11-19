@@ -308,11 +308,4 @@ The investigation journey - from noticing the missing imports, to testing differ
 
 Now go forth and profile those Django imports! 🚀
 
-## Download the Code
-
-All the code from this investigation is available:
-- `patch_all_appconfigs.py` - Global monkeypatch solution
-- `importtime_appconfig.py` - Per-app AppConfig solution
-- Complete usage examples and documentation
-
 Happy profiling!
