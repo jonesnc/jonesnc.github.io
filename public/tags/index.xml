@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on </title>
+    <link>//localhost:1313/tags/</link>
+    <description>Recent content in Tags on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 18 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Django</title>
+      <link>//localhost:1313/blog/django/</link>
+      <pubDate>Tue, 18 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/django/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Importtime</title>
+      <link>//localhost:1313/blog/importtime/</link>
+      <pubDate>Tue, 18 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/importtime/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Profiling</title>
+      <link>//localhost:1313/blog/profiling/</link>
+      <pubDate>Tue, 18 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/profiling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>//localhost:1313/blog/python/</link>
+      <pubDate>Tue, 18 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gemini</title>
+      <link>//localhost:1313/blog/gemini/</link>
+      <pubDate>Tue, 11 Mar 2025 10:11:23 -0600</pubDate>
+      <guid>//localhost:1313/blog/gemini/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Google</title>
+      <link>//localhost:1313/blog/google/</link>
+      <pubDate>Tue, 11 Mar 2025 10:11:23 -0600</pubDate>
+      <guid>//localhost:1313/blog/google/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Json Schema</title>
+      <link>//localhost:1313/blog/json-schema/</link>
+      <pubDate>Tue, 11 Mar 2025 10:11:23 -0600</pubDate>
+      <guid>//localhost:1313/blog/json-schema/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pydantic</title>
+      <link>//localhost:1313/blog/pydantic/</link>
+      <pubDate>Tue, 11 Mar 2025 10:11:23 -0600</pubDate>
+      <guid>//localhost:1313/blog/pydantic/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Openai</title>
+      <link>//localhost:1313/blog/openai/</link>
+      <pubDate>Mon, 13 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/openai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Oracle</title>
+      <link>//localhost:1313/blog/oracle/</link>
+      <pubDate>Sun, 26 May 2024 14:22:18 -0600</pubDate>
+      <guid>//localhost:1313/blog/oracle/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
