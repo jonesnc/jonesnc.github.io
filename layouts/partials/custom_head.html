@@ -1,7 +1,15 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 <style>
+  @font-face {
+    font-family: 'Consolas NF';
+    src: url('{{ "fonts/ConsolasNerdFontMono-Regular.ttf" | relURL }}') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
   :root {
     --font-main: 'Lora', Georgia, serif;
     --font-secondary: 'Lora', Georgia, serif;
@@ -10,13 +18,13 @@
   code,
   .highlight,
   .code {
-    font-family: 'Inconsolata', monospace;
-    font-size: 1em;
+    font-family: 'Consolas NF', Consolas, monospace;
+    font-size: 0.9em;
   }
 
   pre code {
-    font-family: 'Inconsolata', monospace;
-    font-size: 1em;
+    font-family: 'Consolas NF', Consolas, monospace;
+    font-size: 0.9em;
   }
 
   .highlight pre,
