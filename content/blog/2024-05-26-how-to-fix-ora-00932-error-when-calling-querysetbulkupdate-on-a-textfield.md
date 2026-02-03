@@ -1,6 +1,7 @@
 +++
 title = "How to fix ORA-00932 error when calling QuerySet.bulk_update on a TextField"
 date = "2024-05-26T14:22:18-06:00"
+slug = "how-to-fix-ora-00932-error-when-calling-queryset.bulk_update-on-a-textfield"
 
 #
 # description is optional

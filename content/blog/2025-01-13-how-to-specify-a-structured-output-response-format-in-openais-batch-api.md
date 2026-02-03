@@ -1,6 +1,7 @@
 +++
 title = "How to specify a Structured Output Response Format in OpenAI's Batch API"
 date = "2025-01-13"
+slug = "how-to-specify-a-structured-output-response-format-in-openais-batch-api"
 
 tags = ["openai", "json schema"]
 +++

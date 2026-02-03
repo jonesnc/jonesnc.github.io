@@ -1,6 +1,7 @@
 +++
 title = "How to Specify a Structured Output Response Format in Geminis Batch Predictions API"
 date = "2025-03-11T10:11:23-06:00"
+slug = "how-to-specify-a-structured-output-response-format-in-geminis-batch-predictions-api"
 
 #
 # description is optional
