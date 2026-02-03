@@ -15,6 +15,11 @@
     --font-secondary: 'Lora', Georgia, serif;
   }
 
+  body {
+    font-size: 1.125rem;
+    line-height: 1.7;
+  }
+
   code,
   .highlight,
   .code {
@@ -31,5 +36,47 @@
   pre.code {
     padding-left: 1em;
     padding-right: 1em;
+  }
+
+  /* Table of Contents */
+  .toc {
+    margin: 1.5em 0;
+    padding: 1em 1.25em;
+    background: var(--background-secondary, #f8f8f8);
+    border-radius: 4px;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .toc {
+      background: rgba(255, 255, 255, 0.05);
+    }
+  }
+
+  .toc summary {
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 0.5em;
+  }
+
+  .toc nav > ul {
+    margin: 0;
+    padding-left: 1.25em;
+  }
+
+  .toc ul {
+    list-style: none;
+    padding-left: 1em;
+  }
+
+  .toc li {
+    margin: 0.35em 0;
+  }
+
+  .toc a {
+    text-decoration: none;
+  }
+
+  .toc a:hover {
+    text-decoration: underline;
   }
 </style>
