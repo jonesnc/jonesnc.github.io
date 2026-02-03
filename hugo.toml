@@ -1,6 +1,6 @@
 # Base URL used when generating links to your pages
 # Set to the URL for your site
-baseURL = "https://jonesnc.github.io/jonesnc"
+baseURL = "https://jonesnc.github.io/"
 
 # The name of this wonderful theme ;-).
 theme = 'hugo-bearblog'
@@ -8,7 +8,7 @@ theme = 'hugo-bearblog'
 # Basic metadata configuration for your blog.
 title = "Nathan Jones' blog"
 author = "Nathan Jones"
-copyright = "Copyright © 2025, jonesnc."
+copyright = "Copyright © 2026, jonesnc."
 languageCode = "en-US"
 
 # Generate a nice robots.txt for SEO
